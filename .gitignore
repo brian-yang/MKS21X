@@ -1,0 +1,6 @@
+# Java files
+.class
+
+# Emacs save files
+.java~
+.gitignore~
