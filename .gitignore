@@ -4,3 +4,8 @@
 # Emacs save files
 *.java~
 .gitignore~
+
+# Other git repos
+MKS21X/
+interfaceDemo/
+interfaceTest/
