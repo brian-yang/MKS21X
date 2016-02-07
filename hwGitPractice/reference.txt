@@ -1,0 +1,34 @@
+Moving Files between Working Directory and Repository
+(and undoing some of these commands)
+
+git clone URL/SSH Key # Obtains the repository from GitHub and stores it
+in the working directory
+git pull # Update the repository in the working directory with files from
+GitHub
+git add # Adds files to the staging area
+git commit -m # Records files added to staging area that will be pushed
+git push # Pushes all files in staging area to repository on GitHub
+git reset <file> # Undos git add <file>
+git checkout HEAD <file> # Restores a file to how it was before the most recent
+commit
+git checkout SHA . # Restores all files to a version determined by the SHA
+
+Viewing Data
+
+git show SHA # Shows the data for a commit such as the SHA, author, date,
+commit message, and changes made when files were committed 
+git diff # See the difference between a file in the working directory and
+the file in the staging area
+git status # Check the status of all files (committed, new files made, 
+difference between working directory and GitHub repository)
+git log # Lists all commits made so far
+
+What is SHA?
+The SHA is basically a marker for each commit a user made.
+
+Note:
+For certain commands, there are really useful options/flags such as
+for git add. git add . adds all files changed to the staging area
+git commit -am '<message>' adds all files changes and commits them
+with a message
+git revert SHA does what git checkout SHA . does but without the period
